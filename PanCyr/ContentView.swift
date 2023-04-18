@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/*
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -18,6 +19,20 @@ struct ContentView: View {
         .padding()
     }
 }
+*/
+
+struct ContentView: View {
+    @State private var text = ""
+    
+    var body: some View {
+        VStack {
+            TextField("Type here", text: $text)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            Spacer()
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
