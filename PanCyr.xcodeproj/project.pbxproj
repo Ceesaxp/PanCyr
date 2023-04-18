@@ -11,7 +11,34 @@
 		752E8A0A29EE568F0049E5E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752E8A0929EE568F0049E5E1 /* ContentView.swift */; };
 		752E8A0C29EE56940049E5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E8A0B29EE56940049E5E1 /* Assets.xcassets */; };
 		752E8A0F29EE56940049E5E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E8A0E29EE56940049E5E1 /* Preview Assets.xcassets */; };
+		752E8A1C29EE57390049E5E1 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752E8A1B29EE57390049E5E1 /* KeyboardViewController.swift */; };
+		752E8A2029EE57390049E5E1 /* PCKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 752E8A1929EE57390049E5E1 /* PCKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		752E8A2629EE62240049E5E1 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752E8A2529EE62230049E5E1 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		752E8A1E29EE57390049E5E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752E89FC29EE568F0049E5E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752E8A1829EE57390049E5E1;
+			remoteInfo = PCKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		752E8A2429EE573A0049E5E1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				752E8A2029EE57390049E5E1 /* PCKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		752E8A0429EE568F0049E5E1 /* PanCyr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanCyr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +46,21 @@
 		752E8A0929EE568F0049E5E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		752E8A0B29EE56940049E5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		752E8A0E29EE56940049E5E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		752E8A1929EE57390049E5E1 /* PCKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PCKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		752E8A1B29EE57390049E5E1 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		752E8A1D29EE57390049E5E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752E8A2529EE62230049E5E1 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		752E8A0129EE568F0049E5E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752E8A1629EE57390049E5E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				752E8A0629EE568F0049E5E1 /* PanCyr */,
+				752E8A1A29EE57390049E5E1 /* PCKeyboard */,
 				752E8A0529EE568F0049E5E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				752E8A0429EE568F0049E5E1 /* PanCyr.app */,
+				752E8A1929EE57390049E5E1 /* PCKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		752E8A1A29EE57390049E5E1 /* PCKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				752E8A1B29EE57390049E5E1 /* KeyboardViewController.swift */,
+				752E8A1D29EE57390049E5E1 /* Info.plist */,
+				752E8A2529EE62230049E5E1 /* KeyboardView.swift */,
+			);
+			path = PCKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +127,34 @@
 				752E8A0029EE568F0049E5E1 /* Sources */,
 				752E8A0129EE568F0049E5E1 /* Frameworks */,
 				752E8A0229EE568F0049E5E1 /* Resources */,
+				752E8A2429EE573A0049E5E1 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				752E8A1F29EE57390049E5E1 /* PBXTargetDependency */,
 			);
 			name = PanCyr;
 			productName = PanCyr;
 			productReference = 752E8A0429EE568F0049E5E1 /* PanCyr.app */;
 			productType = "com.apple.product-type.application";
+		};
+		752E8A1829EE57390049E5E1 /* PCKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752E8A2129EE573A0049E5E1 /* Build configuration list for PBXNativeTarget "PCKeyboard" */;
+			buildPhases = (
+				752E8A1529EE57390049E5E1 /* Sources */,
+				752E8A1629EE57390049E5E1 /* Frameworks */,
+				752E8A1729EE57390049E5E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PCKeyboard;
+			productName = PCKeyboard;
+			productReference = 752E8A1929EE57390049E5E1 /* PCKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +167,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					752E8A0329EE568F0049E5E1 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					752E8A1829EE57390049E5E1 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +188,7 @@
 			projectRoot = "";
 			targets = (
 				752E8A0329EE568F0049E5E1 /* PanCyr */,
+				752E8A1829EE57390049E5E1 /* PCKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +200,13 @@
 			files = (
 				752E8A0F29EE56940049E5E1 /* Preview Assets.xcassets in Resources */,
 				752E8A0C29EE56940049E5E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752E8A1729EE57390049E5E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +222,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		752E8A1529EE57390049E5E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752E8A1C29EE57390049E5E1 /* KeyboardViewController.swift in Sources */,
+				752E8A2629EE62240049E5E1 /* KeyboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		752E8A1F29EE57390049E5E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752E8A1829EE57390049E5E1 /* PCKeyboard */;
+			targetProxy = 752E8A1E29EE57390049E5E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		752E8A1029EE56940049E5E1 /* Debug */ = {
@@ -262,6 +359,7 @@
 		752E8A1329EE56940049E5E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +388,7 @@
 		752E8A1429EE56940049E5E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +414,54 @@
 			};
 			name = Release;
 		};
+		752E8A2229EE573A0049E5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PCKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PCKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ceesaxp.PanCyr.PCKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		752E8A2329EE573A0049E5E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PCKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PCKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ceesaxp.PanCyr.PCKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +479,15 @@
 			buildConfigurations = (
 				752E8A1329EE56940049E5E1 /* Debug */,
 				752E8A1429EE56940049E5E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		752E8A2129EE573A0049E5E1 /* Build configuration list for PBXNativeTarget "PCKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752E8A2229EE573A0049E5E1 /* Debug */,
+				752E8A2329EE573A0049E5E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
