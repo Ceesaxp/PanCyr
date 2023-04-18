@@ -8,6 +8,7 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
+    private var isInputViewLoaded = false
 
     @IBOutlet var nextKeyboardButton: UIButton!
     
@@ -16,6 +17,20 @@ class KeyboardViewController: UIInputViewController {
         
         // Add custom view sizing constraints here
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        isInputViewLoaded = true
+    }
+    
+    func needsInputModeSwitchKey() -> Bool {
+        if isInputViewLoaded {
+            return true
+        } else {
+            return false
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

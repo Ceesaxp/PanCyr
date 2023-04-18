@@ -70,26 +70,6 @@ struct KeyboardView: View {
                             KeyView(title: key, color: Color.red)
                         } else if key == "Й" {
                             KeyView(title: key, longPressTitles: ["Ѝ", "Ј"])
-                        } else if key == "И" {
-                            KeyView(title: key, longPressTitles: ["І", "Ї"])
-                        } else if key == "Е" {
-                            KeyView(title: key, longPressTitles: ["Ё", "Ѐ", "Ѣ"])
-                        } else if key == "Ч" {
-                            KeyView(title: key, longPressTitles: ["Ђ", "Ћ"])
-                        } else if key == "У" {
-                            KeyView(title: key, longPressTitle: "Ў")
-                        } else if key == "К" {
-                            KeyView(title: key, longPressTitle: "Ќ")
-                        } else if key == "Э" {
-                            KeyView(title: key, longPressTitle: "Є")
-                        } else if key == "Ж" {
-                            KeyView(title: key, longPressTitle: "Џ")
-                        } else if key == "Г" {
-                            KeyView(title: key, longPressTitles: ["Ѓ", "Ґ", "Ғ"])
-                        } else if key == "Н" {
-                            KeyView(title: key, longPressTitle: "Њ")
-                        } else if key == "Л" {
-                            KeyView(title: key, longPressTitle: "Љ")
                         } else {
                             KeyView(title: key)
                         }
