@@ -421,7 +421,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCKeyboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PCKeyboard;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pan-Cyrrilic Keyboard";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PCKeyboard/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = PCKeyboard;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pan-Cyrrilic Keyboard";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

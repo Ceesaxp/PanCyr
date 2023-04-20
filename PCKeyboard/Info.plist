@@ -13,29 +13,29 @@
 			<key>PrimaryLanguage</key>
 			<string>ru-RU</string>
 			<key>RequestsOpenAccess</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.keyboard-service</string>
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).KeyboardViewController</string>
 	</dict>
-    <key>UIApplicationSceneManifest</key>
-    <dict>
-        <key>UIApplicationSupportsMultipleScenes</key>
-        <true/>
-        <key>UISceneConfigurations</key>
-        <dict>
-            <key>UIWindowSceneSessionRoleApplication</key>
-            <array>
-                <dict>
-                    <key>UISceneConfigurationName</key>
-                    <string>(no name)</string>
-                    <key>UISceneDelegateClassName</key>
-                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-                </dict>
-            </array>
-        </dict>
-    </dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>(no name)</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>
